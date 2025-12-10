@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ยานพาหนะ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        nav {
+            border: 1px solid rgb(49, 48, 48);
+            background-color: rgb(49, 48, 48);
+            color: rgb(255, 255, 255);
+            overflow: auto;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            margin: 0px;
+            margin-right: 40px;
+            float: right;
+        }
+        
+        nav ul li {
+            padding: 10px;
+            display: inline-block;
+        }
+        
+        nav ul li:hover {
+            background-color: rgb(210, 238, 108);
+        }
+        
+        nav ul li a {
+            color: rgb(235, 227, 227);
+            text-decoration: none;
+        }
+        /*header start*/
+        
+        header {
+            min-height: 600px;
+            background-image: url("static/img/car2.jpg");
+            background-size: 100% 600px;
+            background-repeat: no-repeat;
+            /* background-position: center; */
+        }
+        
+        .rent_now {
+            background-color: rgba(42, 44, 44, 0.5);
+            border: 1px solid rgba(42, 44, 44, 0.5);
+            text-align: center;
+            padding: 30px;
+            color: white;
+            width: 500px;
+            left: 50%;
+            right: 50%;
+            transform: translate(-50%, 50%);
+            position: absolute;
+        }
+        
+        .rent_now button {
+            background-color: rgb(247, 194, 229);
+            border: none;
+            color: white;
+            padding: 40px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1em;
+            box-shadow: 5px 10px 8px #e79292;
+        }
+        
+        .rent_now button:hover {
+            background-color: rgb(29, 157, 231);
+            color: #043677;
+            box-shadow: 5px 10px 8px #106fec;
+        }
+        /*header end*/
+        /*company_history start*/
+        
+        .company_history {
+            height: 300px;
+            width: 100%;
+            overflow: hidden;
+        }
+        
+        .company_history div {
+            float: left;
+            width: 50%;
+            /* height: 300%; */
+            min-height: 300px;
+            position: relative;
+        }
+        
+        .company_history .left {
+            background-color: darkcyan;
+            overflow: hidden;
+        }
+        
+        .company_history .left img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        
+        .company_history .right {
+            text-align: center;
+            background-color: rgb(233, 236, 227);
+            padding: 30px;
+            box-sizing: border-box;
+        }
+        
+        .company_history .left .overlay {
+            background-color: #e79292;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: 1s ease;
+            background-color: rgba(16, 111, 236, 0.5);
+        }
+        
+        .company_history .left:hover .overlay {
+            opacity: 1;
+        }
+        
+        .company_history .txt {
+            position: absolute;
+            text-align: center;
+            font-size: 1.2em;
+            color: white;
+            font-style: oblique;
+            left: 50%;
+            top: 50%;
+            min-height: 50px;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+        }
+        
+        .company_history button {
+            background-color: rgb(247, 194, 229);
+            border: none;
+            color: white;
+            padding: 40px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1em;
+            box-shadow: 5px 10px 8px #e79292;
+        }
+        
+        .company_history button:hover {
+            background-color: rgb(184, 76, 50);
+        }
+        
+        .hightlight {
+            color: orchid;
+        }
+        /*company_history start*/
+        /*feature start*/
+        
+        .feature {
+            display: block;
+            position: relative;
+            overflow: auto;
+        }
+        
+        .feature .feature_item {
+            float: left;
+            position: relative;
+            /* min-height: 220px; */
+            height: 330px;
+            width: 28%;
+            background-color: bisque;
+            text-align: center;
+            color: rgb(224, 98, 98);
+            padding: 30px;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        
+        .feature .darker {
+            width: 44%;
+            background-color: rgb(214, 156, 85);
+        }
+        /*feature end*/
+        /*footer start*/
+        
+        footer {
+            display: block;
+            position: relative;
+            border: 1px solid #043677;
+            background-color: #043677;
+            color: white;
+            text-align: center;
+            padding-top: 10px;
+            font-size: 0.8em;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="rent_now">
+            <h1>บริการ<span class="hightlight">เช่ารถ</span></h1>
+            <p><span class="hightlight">Lorem ipsum dolor </span>sit amet consectetur, adipisicing elit. Beatae, tenetur.</p>
+            <button>เช่าเลย</button>
+        </div>
+    </header>
+
+    <section class="company_history">
+        <div class="left">
+            <img src="static/img/car3.jpg" alt="company_history">
+            <div class="overlay">
+                <div class="txt">บริการรองรับทุกรูปแบบ เหมาะสำหรับทุกคน ตอบสนองทุกความต้องการ เพื่อให้ลูกค้าของเราสบายใจ สบายจริง
+                    <button onclick="alert('welcome')">Contact Sell Manager</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <p>
+
+                <i class="fa-solid fa-building" style="font-size: 48px;"></i>
+            </p>
+            <h1><span class="hightlight">ประวัติ</span>บริษัทของเรา</h1>
+            <p> เริ่มจากความงง ๆ ของพวกเรา "เอ้ะ! รถเยอะ แต่คนเช่าไม่ค่อยมี" 🤔 เลยรวมตัวกันเปิดบริษัทเช่ารถเจ้าแรกในหมู่บ้านนี้ 🏎️💨 รถแต่ละคันไม่ได้ธรรมดา แต่ **เจ๋งสุด ๆ เหมือนพลังวิเศษ** ใครอยากซิ่ง อยากเท่ อยากมีเรื่องเล่าให้เพื่อนอิจฉา ก็มาหาเราได้เลย!
+                😎🚗 </p>
+        </div>
+
+    </section>
+
+    <section class="feature">
+        <div class="feature_item">
+            <p>
+                <i class="fas fa-car" style="font-size: 48px;"></i>
+            </p>
+            <h2>ยานพาหนะหลากหลาย</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non deserunt ad molestias modi, in quo!</p>
+        </div>
+        <div class="feature_item darker">
+            <p>
+                <i class="fas fa-hands-helping" style="font-size: 48px;"></i>
+            </p>
+            <h2>มีเจ้าหน้าที่คอยให้การช่วยเหลือ บริการทุกระดับประทับใจ</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non deserunt ad molestias modi, in quo!</p>
+        </div>
+        <div class="feature_item">
+            <p>
+                <i class="fas fa-dollar-sign" style="font-size: 48px;"></i>
+            </p>
+            <h2>ราคาจับต้องได้</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non deserunt ad molestias modi, in quo!</p>
+        </div>
+    </section>
+
+    <section class="about">
+
+    </section>
+
+    <section class="contact">
+
+    </section>
+
+    <footer>
+
+        <h4>All right reserved @ 2025 MK rentcar.com</h4>
+        <p> <i class="fas fa-phone"></i> 0660140862</p>
+        <p> <i class="fas fa-envelope-square"></i> mkrentcar@gmail.com</p>
+
+        <p style="font-size: 3em;">
+            <i class="fa-brands fa-cc-apple-pay"></i>
+            <i class="fa-brands fa-cc-visa"></i>
+            <i class="fa-brands fa-cc-discover"></i>
+            <i class="fa-brands fa-cc-paypal"></i>
+            <i class="fa-brands fa-cc-jcb"></i>
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

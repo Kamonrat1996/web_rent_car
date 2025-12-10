@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        .menu {
+            background-color: rgb(34, 132, 197);
+            height: 50px;
+        }
+        
+        .footer {
+            background-color: rgb(34, 132, 197);
+            height: 150px;
+        }
+        /* start content */
+        
+        .content {
+            background-color: rgb(106, 159, 238);
+            height: 550px;
+            overflow: hidden;
+        }
+        
+        .big_icon {
+            font-size: 3em;
+        }
+        
+        .text_center {
+            text-align: center;
+        }
+        
+        .row {
+            background-color: rgb(15, 233, 168);
+            height: 450px;
+            width: 120%;
+            transform: translate(-10vw, 10vh) rotate(-5deg);
+            border: 1px solid rgb(15, 233, 168);
+            overflow: hidden;
+        }
+        
+        .row div {
+            background-color: rgb(197, 116, 41);
+            color: rgb(9, 6, 20);
+            padding: 30px;
+            padding-top: 230px;
+            box-sizing: border-box;
+            font-size: 1em;
+            height: 700px;
+            width: 30vw;
+            margin-left: 2.5vw;
+            display: inline-block;
+            position: absolute;
+            transition: all 1s ease;
+        }
+        
+        .row div:hover {
+            background-color: rgb(221, 156, 103);
+            transition: all 1s ease;
+        }
+        
+        .row div h2 {
+            text-align: center;
+        }
+        
+        .row .column_1 {
+            background-color: rgb(176, 100, 248);
+            transform: translateX(10vw) translateY(-200px) rotate(5deg);
+            left: 0vw;
+        }
+        
+        .row .column_2 {
+            background-color: rgb(167, 92, 236);
+            transform: translateX(10vw) translateY(-200px) rotate(5deg);
+            left: 33.333333vw;
+        }
+        
+        .row .column_3 {
+            background-color: rgb(188, 152, 221);
+            transform: translateX(10vw) translateY(-200px) rotate(5deg);
+            left: 66.666666vw;
+        }
+        
+        @media screen and (max-width:700px) {
+            .row div {
+                font-size: 0.8em;
+                padding: 15px;
+                padding-top: 220px;
+            }
+            .big_icon {
+                font-size: 2.5em;
+            }
+        }
+        
+        @media screen and (max-width:500px) {
+            .big_icon {
+                font-size: 2.5em;
+            }
+            .row {
+                height: auto;
+                width: 100%;
+                transform: translate(0vw, 0vh) rotate(0deg);
+                overflow: auto;
+            }
+            .row div {
+                padding-top: 30px;
+                font-size: 1em;
+                height: auto;
+                width: 90vw;
+                margin-left: 5vw;
+                display: block;
+                position: relative;
+            }
+            .row .column_1 {
+                transform: translateX(0vw) translateY(0px) rotate(0deg);
+                left: 0vw;
+            }
+            .row .column_2 {
+                transform: translateX(0vw) translateY(0px) rotate(0deg);
+                left: 0vw;
+            }
+            .row .column_3 {
+                transform: translateX(0vw) translateY(0px) rotate(0deg);
+                left: 0vw;
+            }
+        }
+        /* end content */
+    </style>
+
+</head>
+
+<body>
+    <div class="menu"></div>
+    <div class="content">
+        <div class="row">
+            <div class="column_1">
+                <p class="text_center"><i class="fa-solid fa-truck-fast big_icon"></i></p>
+                <h2>เช่าได้รวดเร็ว</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptatum sint odio dolore rem exercitationem, mollitia nostrum corporis quia minus.</p>
+            </div>
+            <div class="column_2">
+                <p class="text_center"><i class="fa-solid fa-hands-wash big_icon"></i></p>
+                <h2>บริการด้วยใจ</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et delectus autem adipisci laboriosam corrupti voluptatum!</p>
+            </div>
+            <div class="column_3">
+                <p class="text_center"><i class="fa-solid fa-fighter-jet big_icon"></i></p>
+                <h2>ถูกใจทุกระดับ</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis dolores corrupti accusantium aspernatur officiis possimus?</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer"></div>
+
+</body>
+
+</html>

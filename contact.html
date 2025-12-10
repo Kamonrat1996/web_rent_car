@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        .menu {
+            background-color: rgb(34, 132, 197);
+            height: 50px;
+        }
+        
+        .footer {
+            background-color: rgb(34, 132, 197);
+            height: 150px;
+        }
+        /* start content */
+        
+        .content {
+            background-color: rgb(106, 159, 238);
+        }
+        
+        .big_icon {
+            font-size: 3em;
+        }
+        
+        .text_center {
+            text-align: center;
+        }
+        
+        .row {
+            background-color: rgb(151, 230, 206);
+            width: 100%;
+            transition: all 0.5s ease;
+            border: 1px solid rgb(151, 230, 206);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .row div {
+            color: rgb(9, 6, 20);
+            padding: 30px;
+            box-sizing: border-box;
+            font-size: 1em;
+            height: 400px;
+            width: 400px;
+            margin: 30px;
+            transition: all 1s ease;
+        }
+        
+        .row div:hover {
+            /* background-image: radial-gradient(circle, rgba(255, 255, 255, 0.6) 0%, rgba(233, 161, 7, 0.5) 40%, rgba(233, 166, 111, 1) 100%); */
+            /* transition: all 1s ease; */
+        }
+        
+        .row div h2 {
+            text-align: center;
+        }
+        
+        .row .left .left_overlay {
+            visibility: hidden;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            /* border-radius: 200px; */
+        }
+        
+        .row .left:hover .left_overlay {
+            visibility: visible;
+            background-image: radial-gradient(circle, rgba(255, 255, 255, 0.4) 0%, rgba(233, 161, 7, 0.4) 40%, rgba(233, 166, 111, 0.9) 100%);
+            transition: all 1s ease;
+        }
+        
+        .row .left {
+            overflow: hidden;
+            padding: 0px;
+            background-image: url(static/img/car.jpg);
+            background-size: 100% 100%;
+            border-radius: 200px;
+            /* background-position-y: +50%; */
+            /* background-color: rgb(176, 100, 248); */
+        }
+        
+        .row .right {
+            /* background-color: rgb(167, 92, 236); */
+        }
+        
+        .row .form {
+            background-color: rgb(188, 152, 221);
+            max-width: 860px;
+            width: 860px;
+            font-size: 1.5em;
+            height: auto;
+        }
+        
+        .row .form input[type="text"] {
+            width: 100%;
+            font-size: 0.8em;
+        }
+        
+        .row .form input[type="email"] {
+            width: 100%;
+            font-size: 0.8em;
+        }
+        
+        .row .form textarea {
+            height: 4.5em;
+            width: 100%;
+        }
+        
+        .row .form input[type="submit"] {
+            margin-top: 20px;
+            font-size: 1em;
+            background-color: rgb(212, 91, 91);
+            padding: 20px;
+            border-width: 1px;
+            border-color: #0e72f5;
+            border-style: solid;
+            color: aqua;
+        }
+        
+        .row .form input[type="submit"]:hover {
+            background-color: rgb(212, 91, 91);
+            border-color: #0ccf77;
+            color: rgb(105, 105, 219);
+            transition: all 0.5s ease 0.1s;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="menu"></div>
+    <div class="content">
+
+        <div class="row">
+            <div class="left">
+                <div class="left_overlay">
+
+                </div>
+            </div>
+            <div class="right">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos numquam autem labore quis maxime, quam, ea iure necessitatibus sunt ab commodi aut ullam distinctio rem facilis eum consectetur corrupti pariatur.</p>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="form">
+                <h2>เชิญส่งข้อความหาทีมงานของเราได้เลยค่ะ</h2>
+                <form action="contact.php" method="get">
+                    <label>Name :</label> <br/>
+                    <input type="text" name="input_name" id="input_name"><br/>
+
+                    <label>Email :</label> <br/>
+                    <input type="email" name="input_email" id="input_email"><br/>
+
+                    <label>Phone :</label> <br/>
+                    <input type="email" name="input_phone" id="input_phone"><br/>
+
+                    <label>Message :</label> <br/>
+                    <textarea name="message"></textarea>
+
+                    <input type="submit" value="submiit" name="submit">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer"></div>
+
+</body>
+
+</html>
